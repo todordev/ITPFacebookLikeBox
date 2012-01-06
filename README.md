@@ -1,15 +1,22 @@
-ITPShare Module for Joomla! 
+ITPFacebookLikeBox for Joomla! 
 ==========================
-( Version 1.8 )
+( Version 1.3 )
 --------------------------
-
 
 
 Changelog
 ---------
 
-v1.8
+v1.3
 -----
 * Added Border Color
 * Added advanced options
 
+v1.2
+-----------
+* Added new option that helps to avoid conflict between different FB applications.
+
+v1.1
+-----------
+* Added multilanguage
+* Improved
