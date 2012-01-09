@@ -10,6 +10,7 @@ Changelog
 v1.3
 -----
 * Added Border Color
+* Added HTML5 renderer
 * Added advanced options
 
 v1.2
