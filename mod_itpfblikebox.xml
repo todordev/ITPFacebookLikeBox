@@ -37,7 +37,7 @@
 						<option value="light">MOD_ITPFBLIKEBOX_LIGHT</option>
 						<option value="dark">MOD_ITPFBLIKEBOX_DARK</option>
 					</field>
-					<field name="fbBColor" type="text" default="" label="MOD_ITPFBLIKEBOX_BCOLOR" description="MOD_ITPFBLIKEBOX_BCOLOR_DESC" />
+					<field name="fbBColour" type="text" default="" label="MOD_ITPFBLIKEBOX_BCOLOUR" description="MOD_ITPFBLIKEBOX_BCOLOUR_DESC" />
 					<field name="fbFaces" type="radio" default="1" label="MOD_ITPFBLIKEBOX_FACES" description="MOD_ITPFBLIKEBOX_FACES_DESC">
 						<option value="0">JHIDE</option>
 						<option value="1">JSHOW</option>
