@@ -180,6 +180,7 @@
 					<field name="cache_time" type="text" default="900"
 						label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
 					
+					<field name="spacer1" type="spacer" class="text" label="######### FACEBOOK SETTINGS #########" />
 					<field name="facebookLikeAppId" type="text" default="" label="MOD_ITPFBLIKEBOX_APP_ID" description="MOD_ITPFBLIKEBOX_APP_ID_DESC" />
 					<field name="fbLoadJsLib" type="radio" default="1" label="MOD_ITPFBLIKEBOX_LOAD_JS_LIB" description="MOD_ITPFBLIKEBOX_LOAD_JS_LIB_DESC">
 	                    <option value="0">JNO</option>
