@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-	<extension type="module" version="1.7" client="site" method="upgrade">
+	<extension type="module" version="2.5" client="site" method="upgrade">
 	<name>ITPFacebookLikeBox</name>
 	<author>Todor Iliev</author>
 	<creationDate>January, 2010</creationDate>
@@ -7,10 +7,8 @@
 	<license>http://www.gnu.org/copyleft/gpl.html</license>
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
-	<version>1.3</version>
-	<description><![CDATA[<p><a href='http://itprism.com/free-joomla-extensions/facebook-like-module'>ITPFacebookLikeBox</a> adds Facebook fan box on your website.</p>
-	<p>If you like this extension, you are able to invest in its improvement. You can <a href="http://itprism.com/sponsorship" title="Sponsoring" target="_blank">sponsor the extension via SMS or PayPal</a>.</p>
-	<p>Please, vote for this module on <a href='http://extensions.joomla.org/extensions/social-web/facebook-display/15754' target='_blank'>Joomla! Extensions Directory!</a></p>]]></description>
+	<version>1.4</version>
+	<description>MOD_ITPFBLIKEBOX_DESC</description>
 		<languages>
 	        <language tag="en-GB">en-GB.mod_itpfblikebox.ini</language>
 	        <language tag="en-GB">en-GB.mod_itpfblikebox.sys.ini</language>
@@ -25,7 +23,7 @@
 		<config>
 			<fields name="params">
 	            <fieldset name="basic">
-					<field name="fbPageLink" type="text" default="" size="100" label="MOD_ITPFBLIKEBOX_PAGE_LINK" description="MOD_ITPFBLIKEBOX_PAGE_LINK_DESC" />        
+					<field name="fbPageLink" type="text" default="" size="80" label="MOD_ITPFBLIKEBOX_PAGE_LINK" description="MOD_ITPFBLIKEBOX_PAGE_LINK_DESC" />        
 					<field name="fbRendering" type="list" default="2" label="MOD_ITPFBLIKEBOX_RENDERING" description="MOD_ITPFBLIKEBOX_RENDERING_DESC" >
 					   <option value="0">iframe</option>
 					   <option value="1">XFBML</option>
@@ -190,6 +188,10 @@
 	                    <option value="0">JNO</option>
 	                    <option value="1">JYES</option>
 	                 </field>
+	                 <field name="facebookForceWall" type="radio" default="0" label="MOD_ITPFBLIKEBOX_FORCE_WALL" description="MOD_ITPFBLIKEBOX_FORCE_WALL_DESC" >
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                     </field>
 				</fieldset>
 	        </fields>
 		</config>
