@@ -14,6 +14,8 @@
 // no direct access
 defined( "_JEXEC" ) or die;
 
+$moduleClassSfx = htmlspecialchars($params->get('moduleclass_sfx'));
+
 if($params->get("fbDynamicLocale", 0)) {
     $lang = JFactory::getLanguage();
     $locale = $lang->getTag();
@@ -27,4 +29,4 @@ if($params->get("facebookLikeAppId")) {
     $facebookLikeAppId = "&amp;appId=" . $params->get("facebookLikeAppId");
 }
 
-require(JModuleHelper::getLayoutPath('mod_itpfblikebox'));
+require JModuleHelper::getLayoutPath('mod_itpfblikebox', $params->get('layout', 'default'));

@@ -1,11 +1,15 @@
-ITPFacebookLikeBox for Joomla! 
+ITPFacebookLikeBox for Joomla! 1.5
 ==========================
-( Version 1.3 )
+( Version 1.4 )
 --------------------------
 
 
 Changelog
 ---------
+
+v1.4
+-----
+* Added option to force wall
 
 v1.3
 -----

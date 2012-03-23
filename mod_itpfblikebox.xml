@@ -7,17 +7,23 @@
 	<license>http://www.gnu.org/copyleft/gpl.html</license>
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
-	<version>1.2</version>
+	<version>1.4</version>
 	<description>MOD_ITPFBLIKEBOX_DESC</description>
+	
+	<languages>
+        <language tag="en-GB">en-GB.mod_itpfblikebox.ini</language>
+    </languages>
+    
 	<files>
 		<filename module="mod_itpfblikebox">mod_itpfblikebox.php</filename>
 		<filename>index.html</filename>
 		<filename>tmpl/default.php</filename>
 		<filename>tmpl/index.html</filename>
+		<filename>README.md</filename>
 	</files>
 
 	<params>
-        <param name="fbPageLink" type="text" default="" size="100" label="MOD_ITPFBLIKEBOX_PAGE_LINK" description="MOD_ITPFBLIKEBOX_PAGE_LINK_DESC" />        
+        <param name="fbPageLink" type="text" default="" size="80" label="MOD_ITPFBLIKEBOX_PAGE_LINK" description="MOD_ITPFBLIKEBOX_PAGE_LINK_DESC" />        
         <param name="fbRendering" type="list" default="2" label="MOD_ITPFBLIKEBOX_RENDERING" description="MOD_ITPFBLIKEBOX_RENDERING_DESC" >
            <option value="0">iframe</option>
            <option value="1">XFBML</option>
@@ -175,10 +181,10 @@
             <option value="0">JNO</option>
             <option value="1">JYES</option>
         </param>
-                     
+        <param name="facebookForceWall" type="radio" default="0" label="MOD_ITPFBLIKEBOX_FORCE_WALL" description="MOD_ITPFBLIKEBOX_FORCE_WALL_DESC" >
+           <option value="0">JNO</option>
+           <option value="1">JYES</option>
+        </param>             
     </params>
-	
-	<languages>
-        <language tag="en-GB">en-GB.mod_itpfblikebox.ini</language>
-    </languages>    
+	    
 </install>

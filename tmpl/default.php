@@ -13,7 +13,7 @@
 
 // no direct access
 defined( "_JEXEC" ) or die;?>
-<div id="itp-fblike-box<?php echo $params->get('moduleclass_sfx');?>">
+<div class="itp-fblike-box<?php echo $moduleClassSfx;?>">
 
 <?php switch ($params->get("fbRendering",0)){ 
     
@@ -40,7 +40,8 @@ defined( "_JEXEC" ) or die;?>
     show_faces="<?php echo (!$params->get("fbFaces")) ? "false" : "true";?>" 
     border_color="<?php echo $params->get("fbBColour", "");?>" 
     stream="<?php echo (!$params->get("fbStream")) ? "false" : "true";?>" 
-    header="<?php echo (!$params->get("fbHeader")) ? "false" : "true";?>"></fb:like-box>
+    header="<?php echo (!$params->get("fbHeader")) ? "false" : "true";?>" 
+    force_wall="<?php echo (!$params->get("facebookForceWall")) ? "false" : "true";?>"></fb:like-box>
 
 <?php break; ?>
 
@@ -69,14 +70,22 @@ defined( "_JEXEC" ) or die;?>
 	data-show-faces="<?php echo $params->get("fbFaces", 1); ?>" 
 	data-border-color="<?php echo $params->get("fbBColour", "");?>" 
 	data-stream="<?php echo $params->get("fbStream", 1); ?>" 
-	data-header="<?php echo $params->get("fbHeader", 1); ?>"></div>
+	data-header="<?php echo $params->get("fbHeader", 1); ?>" 
+	data-force-wall="<?php echo (!$params->get("facebookForceWall")) ? "false" : "true";?>"></div>
 <?php break; ?>
 
 
 <?php default: // iframe ?>
 
+<?php 
+	$forceWall ="";
+	if($params->get("facebookForceWall"))  {
+		$forceWall = '&amp;force_wall=true';
+	}
+ ?>
+ 
 <iframe 
-src="http://www.facebook.com/plugins/likebox.php?href=<?php echo $params->get("fbPageLink");?>&amp;locale=<?php echo $locale;?>&amp;width=<?php echo $params->get("fbWidth");?>&amp;colorscheme=<?php echo $params->get("fbColour");?>&amp;show_faces=<?php echo $params->get("fbFaces", 1);?>&amp;border_color=<?php echo rawurlencode($params->get("fbBColour", ""));?>&amp;stream=<?php echo $params->get("fbStream", 1);?>&amp;header=<?php echo $params->get("fbHeader", 1);?>&amp;height=<?php echo $params->get("fbHeight");?><?php echo $facebookLikeAppId;?>"
+src="http://www.facebook.com/plugins/likebox.php?href=<?php echo $params->get("fbPageLink");?>&amp;locale=<?php echo $locale;?>&amp;width=<?php echo $params->get("fbWidth");?>&amp;colorscheme=<?php echo $params->get("fbColour");?>&amp;show_faces=<?php echo $params->get("fbFaces", 1);?>&amp;border_color=<?php echo rawurlencode($params->get("fbBColour", ""));?>&amp;stream=<?php echo $params->get("fbStream", 1);?>&amp;header=<?php echo $params->get("fbHeader", 1);?>&amp;height=<?php echo $params->get("fbHeight");?><?php echo $facebookLikeAppId;?><?php echo $forceWall;?>"
 scrolling="no" 
 frameborder="0" 
 style="border:none; overflow:hidden; width:<?php echo $params->get("fbWidth");?>px; height:<?php echo $params->get("fbHeight");?>px;" 
