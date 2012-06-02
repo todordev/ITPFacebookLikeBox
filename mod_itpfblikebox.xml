@@ -8,7 +8,12 @@
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
 	<version>1.4</version>
-	<description>MOD_ITPFBLIKEBOX_DESC</description>
+	<description><![CDATA[
+	<p><a href='http://itprism.vi/free-joomla-extensions/social-marketing-seo/facebook-like-box' target='_blank'>ITPFacebookLikeBox</a> adds Facebook fan box on your website.</p>
+    <p>Invest in the extension and help for its improvement. You can <a href="http://itprism.com/sponsorship" title="Sponsoring" target="_blank">sponsor the extension via SMS or PayPal</a>.</p>
+    <p><a href='http://itprism.com/' target='_blank'>Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
+    <p>Please, vote for this module on <a href='http://extensions.joomla.org/extensions/social-web/facebook-display/15754' target='_blank'>Joomla! Extensions Directory!</a></p>
+    ]]></description>
 		<languages>
 	        <language tag="en-GB">en-GB.mod_itpfblikebox.ini</language>
 	        <language tag="en-GB">en-GB.mod_itpfblikebox.sys.ini</language>
