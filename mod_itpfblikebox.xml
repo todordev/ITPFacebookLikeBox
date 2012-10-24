@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install type="module" version="1.5.0" method="upgrade">
-	<name>ITPFacebookLikeBox</name>
+	<name>MOD_ITPFBLIKEBOX</name>
 	<author>Todor Iliev</author>
 	<copyright>Copyright (C) 2010 Todor Iliev ( ITPrism.com )</copyright>
 	<license>http://www.gnu.org/copyleft/gpl.html</license>
