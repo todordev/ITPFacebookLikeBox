@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<extension type="module" version="2.5" client="site" method="upgrade">
-	<name>ITPFacebookLikeBox</name>
+	<name>MOD_ITPFBLIKEBOX</name>
 	<author>Todor Iliev</author>
-	<creationDate>January, 2010</creationDate>
 	<copyright>Copyright (C) 2010 Todor Iliev ( ITPrism.com )</copyright>
 	<license>http://www.gnu.org/copyleft/gpl.html</license>
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
-	<version>1.4</version>
-	<description><![CDATA[
-	<p><a href='http://itprism.com/free-joomla-extensions/social-marketing-seo/facebook-like-box' target='_blank'>ITPFacebookLikeBox</a> adds Facebook fan box on your website.</p>
-    <p>Invest in the extension and help for its improvement. You can <a href="http://itprism.com/sponsorship" title="Sponsoring" target="_blank">sponsor the extension via SMS or PayPal</a>.</p>
-    <p><a href='http://itprism.com/' target='_blank'>Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
-    <p>Please, vote for this module on <a href='http://extensions.joomla.org/extensions/social-web/facebook-display/15754' target='_blank'>Joomla! Extensions Directory!</a></p>
-    ]]></description>
-		<languages>
-	        <language tag="en-GB">en-GB.mod_itpfblikebox.ini</language>
-	        <language tag="en-GB">en-GB.mod_itpfblikebox.sys.ini</language>
-	    </languages>    
-		<files>
-			<filename module="mod_itpfblikebox">mod_itpfblikebox.php</filename>
-			<filename>index.html</filename>
-			<filename>README.md</filename>
-			<filename>tmpl/default.php</filename>
-			<filename>tmpl/index.html</filename>
-		</files>
+	<version>1.5</version>
+	<creationDate>24 October, 2012</creationDate>
+	<description>MOD_ITPFBLIKEBOX_DESC</description>
+    
+	<languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_itpfblikebox.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_itpfblikebox.sys.ini</language>
+    </languages>    
+    
+    <help url="MOD_ITPFBLIKEBOX_HELP_URL"/>
+    
+	<files>
+		<filename module="mod_itpfblikebox">mod_itpfblikebox.php</filename>
+		<filename>index.html</filename>
+		<filename>README.md</filename>
+		<folder>tmpl</folder>
+	</files>
 		<config>
 			<fields name="params">
 	            <fieldset name="basic">
@@ -35,7 +33,7 @@
 					   <option value="2">HTML5</option>
 					</field>
 					<field name="fbWidth" type="text" default="250" label="MOD_ITPFBLIKEBOX_WIDTH" description="MOD_ITPFBLIKEBOX_WIDTH_DESC" />
-					<field name="fbHeight" type="text" default="427" label="MOD_ITPFBLIKEBOX_HEIGHT" description="MOD_ITPFBLIKEBOX_HEIGHT_DESC" />
+					<field name="fbHeight" type="text" default="827" label="MOD_ITPFBLIKEBOX_HEIGHT" description="MOD_ITPFBLIKEBOX_HEIGHT_DESC" />
 					<field name="fbColour" type="list" default="light" label="MOD_ITPFBLIKEBOX_COLOUR" description="MOD_ITPFBLIKEBOX_COLOUR_DESC">
 						<option value="light">MOD_ITPFBLIKEBOX_LIGHT</option>
 						<option value="dark">MOD_ITPFBLIKEBOX_DARK</option>
@@ -183,7 +181,7 @@
 					<field name="cache_time" type="text" default="900"
 						label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
 					
-					<field name="spacer1" type="spacer" class="text" label="######### FACEBOOK SETTINGS #########" />
+					<field name="spacer1" type="spacer" class="text" label="MOD_ITPFBLIKEBOX_FACEBOOK_SETTINGS" />
 					<field name="facebookLikeAppId" type="text" default="" label="MOD_ITPFBLIKEBOX_APP_ID" description="MOD_ITPFBLIKEBOX_APP_ID_DESC" />
 					<field name="fbLoadJsLib" type="radio" default="1" label="MOD_ITPFBLIKEBOX_LOAD_JS_LIB" description="MOD_ITPFBLIKEBOX_LOAD_JS_LIB_DESC">
 	                    <option value="0">JNO</option>
