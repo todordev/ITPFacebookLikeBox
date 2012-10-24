@@ -14,8 +14,6 @@
 // no direct access
 defined( "_JEXEC" ) or die;
 
-$moduleClassSfx = htmlspecialchars($params->get('moduleclass_sfx'));
-
 if($params->get("fbDynamicLocale", 0)) {
     $lang = JFactory::getLanguage();
     $locale = $lang->getTag();

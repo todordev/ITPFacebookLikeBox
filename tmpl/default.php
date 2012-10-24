@@ -13,16 +13,15 @@
 
 // no direct access
 defined( "_JEXEC" ) or die;?>
-<div class="itp-fblike-box<?php echo $moduleClassSfx;?>">
-
 <?php switch ($params->get("fbRendering",0)){ 
     
     case 1: // XFBML ?>
 
-<?php if($params->get("fbLoadJsLib", 1)) {?>
 <?php if($params->get("facebookRootDiv", 1)) {?>
 <div id="fb-root"></div>
 <?php }?>
+
+<?php if($params->get("fbLoadJsLib", 1)) {?>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -48,12 +47,11 @@ defined( "_JEXEC" ) or die;?>
 
 <?php case 2: // HTML5 ?>
 
-<?php if($params->get("fbLoadJsLib", 1)) {?>
-
 <?php if($params->get("facebookRootDiv", 1)) {?>
 <div id="fb-root"></div>
 <?php }?>
 
+<?php if($params->get("fbLoadJsLib", 1)) {?>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -94,4 +92,3 @@ allowTransparency="true"></iframe>
 <?php break; ?>
 
 <?php }// END switch?>
-</div>

@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install type="module" version="1.5.0" method="upgrade">
-	<name>ITPFacebookLikeBox</name>
+	<name>MOD_ITPFBLIKEBOX</name>
 	<author>Todor Iliev</author>
-	<creationDate>January, 2010</creationDate>
 	<copyright>Copyright (C) 2010 Todor Iliev ( ITPrism.com )</copyright>
 	<license>http://www.gnu.org/copyleft/gpl.html</license>
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
-	<version>1.4</version>
+	<version>1.5</version>
+	<creationDate>24 October, 2012</creationDate>
 	<description>MOD_ITPFBLIKEBOX_DESC</description>
 	
-	<languages>
-        <language tag="en-GB">en-GB.mod_itpfblikebox.ini</language>
+	<languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_itpfblikebox.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_itpfblikebox.sys.ini</language>
     </languages>
+    
+    <help url="MOD_ITPFBLIKEBOX_HELP_URL"/>
     
 	<files>
 		<filename module="mod_itpfblikebox">mod_itpfblikebox.php</filename>
 		<filename>index.html</filename>
-		<filename>tmpl/default.php</filename>
-		<filename>tmpl/index.html</filename>
 		<filename>README.md</filename>
+		<folder>tmpl</folder>
 	</files>
 
 	<params>
@@ -30,23 +32,23 @@
            <option value="2">HTML5</option>
         </param>
         <param name="fbWidth" type="text" default="250" label="MOD_ITPFBLIKEBOX_WIDTH" description="MOD_ITPFBLIKEBOX_WIDTH_DESC" />
-        <param name="fbHeight" type="text" default="427" label="MOD_ITPFBLIKEBOX_HEIGHT" description="MOD_ITPFBLIKEBOX_HEIGHT_DESC" />
+        <param name="fbHeight" type="text" default="827" label="MOD_ITPFBLIKEBOX_HEIGHT" description="MOD_ITPFBLIKEBOX_HEIGHT_DESC" />
         <param name="fbColour" type="list" default="light" label="MOD_ITPFBLIKEBOX_COLOUR" description="MOD_ITPFBLIKEBOX_COLOUR_DESC">
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
+            <option value="light">MOD_ITPFBLIKEBOX_LIGHT</option>
+            <option value="dark">MOD_ITPFBLIKEBOX_DARK</option>
         </param>
         <field name="fbBColour" type="text" default="" label="MOD_ITPFBLIKEBOX_BCOLOUR" description="MOD_ITPFBLIKEBOX_BCOLOUR_DESC" />
         <param name="fbFaces" type="radio" default="1" label="MOD_ITPFBLIKEBOX_FACES" description="MOD_ITPFBLIKEBOX_FACES_DESC">
-            <option value="0">Hide</option>
-            <option value="1">Show</option>
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
         </param>
         <param name="fbStream" type="radio" default="1" label="MOD_ITPFBLIKEBOX_STREAM" description="MOD_ITPFBLIKEBOX_STREAM_DESC">
-            <option value="0">Hide</option>
-            <option value="1">Show</option>
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
         </param>
         <param name="fbHeader" type="radio" default="1" label="MOD_ITPFBLIKEBOX_HEADER" description="MOD_ITPFBLIKEBOX_HEADER_DESC">
-            <option value="0">Hide</option>
-            <option value="1">Show</option>
+            <option value="0">JHIDE</option>
+            <option value="1">JSHOW</option>
         </param>
         <param name="fbDynamicLocale" type="radio" default="1" label="MOD_ITPFBLIKEBOX_DYN_LOCALE" description="MOD_ITPFBLIKEBOX_DYN_LOCALE_DESC">
             <option value="0">JNO</option>
@@ -171,7 +173,7 @@
         </param>
         <param name="cache_time" type="text" default="900" label="CACHING_TIME" description="CACHING_TIME_DESC" />
         
-        <param name="@spacer" type="spacer" default="######### FACEBOOK SETTINGS #########" label="" description="" />
+        <param name="@spacer" type="spacer" default="MOD_ITPFBLIKEBOX_FACEBOOK_SETTINGS" label="" description="" />
         <param name="facebookLikeAppId" type="text" default="" label="MOD_ITPFBLIKEBOX_APP_ID" description="MOD_ITPFBLIKEBOX_APP_ID_DESC" />
         <param name="fbLoadJsLib" type="radio" default="1" label="MOD_ITPFBLIKEBOX_LOAD_JS_LIB" description="MOD_ITPFBLIKEBOX_LOAD_JS_LIB_DESC">
            <option value="0">JNO</option>
