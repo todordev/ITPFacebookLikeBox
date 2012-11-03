@@ -2,12 +2,12 @@
 <install type="module" version="1.5.0" method="upgrade">
 	<name>ITPFacebookLikeBox</name>
 	<author>Todor Iliev</author>
+	<creationDate>January, 2010</creationDate>
 	<copyright>Copyright (C) 2010 Todor Iliev ( ITPrism.com )</copyright>
 	<license>http://www.gnu.org/copyleft/gpl.html</license>
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
-	<version>1.5</version>
-	<creationDate>24 October, 2012</creationDate>
+	<version>1.6</version>
 	<description>MOD_ITPFBLIKEBOX_DESC</description>
 	
 	<languages folder="language">
