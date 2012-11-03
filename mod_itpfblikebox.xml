@@ -2,12 +2,12 @@
 	<extension type="module" version="2.5" client="site" method="upgrade">
 	<name>MOD_ITPFBLIKEBOX</name>
 	<author>Todor Iliev</author>
+	<creationDate>January, 2010</creationDate>
 	<copyright>Copyright (C) 2010 Todor Iliev ( ITPrism.com )</copyright>
 	<license>http://www.gnu.org/copyleft/gpl.html</license>
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
-	<version>1.5</version>
-	<creationDate>24 October, 2012</creationDate>
+	<version>1.6</version>
 	<description>MOD_ITPFBLIKEBOX_DESC</description>
     
 	<languages folder="language">
@@ -166,35 +166,52 @@
                     </field>
 				</fieldset>
 				
+				<fieldset name="facebook_advanced_options" label="MOD_ITPFBLIKEBOX_FACEBOOK_SETTINGS">
+				    <field name="facebookLikeAppId" type="text" default="" label="MOD_ITPFBLIKEBOX_APP_ID" description="MOD_ITPFBLIKEBOX_APP_ID_DESC" />
+                    <field name="fbLoadJsLib" type="radio" default="1" label="MOD_ITPFBLIKEBOX_LOAD_JS_LIB" description="MOD_ITPFBLIKEBOX_LOAD_JS_LIB_DESC">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                    </field>
+                    <field name="facebookRootDiv" type="radio" default="1" label="MOD_ITPFBLIKEBOX_ROOT" description="MOD_ITPFBLIKEBOX_ROOT_DESC" >
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                     </field>
+                     <field name="facebookForceWall" type="radio" default="0" label="MOD_ITPFBLIKEBOX_FORCE_WALL" description="MOD_ITPFBLIKEBOX_FORCE_WALL_DESC" >
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                     </field>
+				</fieldset>
+				
 				<fieldset name="advanced">
 					<field name="moduleclass_sfx" type="text"
 						label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
 						description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
 	
-					<field name="owncache" type="list" default="1"
-						label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC" >
-						<option value="1">JGLOBAL_USE_GLOBAL</option>
-						<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING
-						</option>
-					</field>
-	
-					<field name="cache_time" type="text" default="900"
-						label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+					<field
+                        name="cache"
+                        type="list"
+                        default="1"
+                        label="COM_MODULES_FIELD_CACHING_LABEL"
+                        description="COM_MODULES_FIELD_CACHING_DESC">
+                        <option
+                            value="1">JGLOBAL_USE_GLOBAL</option>
+                        <option
+                            value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                    </field>
+                    <field
+                        name="cache_time"
+                        type="text"
+                        default="900"
+                        label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                        description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+                    <field
+                        name="cachemode"
+                        type="hidden"
+                        default="static">
+                        <option
+                            value="static"></option>
+                    </field>
 					
-					<field name="spacer1" type="spacer" class="text" label="MOD_ITPFBLIKEBOX_FACEBOOK_SETTINGS" />
-					<field name="facebookLikeAppId" type="text" default="" label="MOD_ITPFBLIKEBOX_APP_ID" description="MOD_ITPFBLIKEBOX_APP_ID_DESC" />
-					<field name="fbLoadJsLib" type="radio" default="1" label="MOD_ITPFBLIKEBOX_LOAD_JS_LIB" description="MOD_ITPFBLIKEBOX_LOAD_JS_LIB_DESC">
-	                    <option value="0">JNO</option>
-	                    <option value="1">JYES</option>
-	                </field>
-	                <field name="facebookRootDiv" type="radio" default="1" label="MOD_ITPFBLIKEBOX_ROOT" description="MOD_ITPFBLIKEBOX_ROOT_DESC" >
-	                    <option value="0">JNO</option>
-	                    <option value="1">JYES</option>
-	                 </field>
-	                 <field name="facebookForceWall" type="radio" default="0" label="MOD_ITPFBLIKEBOX_FORCE_WALL" description="MOD_ITPFBLIKEBOX_FORCE_WALL_DESC" >
-                        <option value="0">JNO</option>
-                        <option value="1">JYES</option>
-                     </field>
 				</fieldset>
 	        </fields>
 		</config>
