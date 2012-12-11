@@ -1,11 +1,15 @@
 ITPFacebookLikeBox for Joomla! 
 ==========================
-( Version 1.6 )
+( Version 1.7 )
 --------------------------
-
 
 Changelog
 ---------
+
+v1.7
+-----
+* Added option to make the box responsive.
+* Added Lithuanian translation ( Thanks [[Martynas]] (http://www.joomla123.lt/) and [[Rimvydas]] (https://www.transifex.com/accounts/profile/Rimvydas/) )
 
 v1.6
 -----
