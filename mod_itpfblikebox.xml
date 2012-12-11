@@ -180,6 +180,10 @@
                         <option value="0">JNO</option>
                         <option value="1">JYES</option>
                      </field>
+                     <field name="facebookResponsive" type="radio" default="0" label="MOD_ITPFBLIKEBOX_RESPONSIVE" description="MOD_ITPFBLIKEBOX_RESPONSIVE_DESC" >
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                     </field>
 				</fieldset>
 				
 				<fieldset name="advanced">

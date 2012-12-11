@@ -27,4 +27,19 @@ if($params->get("facebookLikeAppId")) {
     $facebookLikeAppId = "&amp;appId=" . $params->get("facebookLikeAppId");
 }
 
+// Make Facebook Like Box responsive
+if($params->get("facebookResponsive", 0) ) { 
+    $css = '
+    #fb-root {
+      display: none;
+    }
+    
+    .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+      width: 100% !important;
+    }';
+
+    $doc = JFactory::getDocument();
+    $doc->addStyleDeclaration($css);
+}
+
 require JModuleHelper::getLayoutPath('mod_itpfblikebox', $params->get('layout', 'default'));
