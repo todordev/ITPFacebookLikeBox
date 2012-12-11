@@ -13,6 +13,8 @@
 	<languages folder="language">
         <language tag="en-GB">en-GB/en-GB.mod_itpfblikebox.ini</language>
         <language tag="en-GB">en-GB/en-GB.mod_itpfblikebox.sys.ini</language>
+        <language tag="lt-LT">lt-LT/lt-LT.mod_itpfblikebox.ini</language>
+        <language tag="lt-LT">lt-LT/lt-LT.mod_itpfblikebox.sys.ini</language>
     </languages>    
     
     <help url="MOD_ITPFBLIKEBOX_HELP_URL"/>
