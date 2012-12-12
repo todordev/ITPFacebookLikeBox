@@ -163,6 +163,10 @@
             <option value="zh_TW">MOD_ITPFBLIKEBOX_ZH_TW</option>
             <option value="zu_ZA">MOD_ITPFBLIKEBOX_ZU_ZA</option>
         </param>
+        <param name="facebookResponsive" type="radio" default="0" label="MOD_ITPFBLIKEBOX_RESPONSIVE" description="MOD_ITPFBLIKEBOX_RESPONSIVE_DESC" >
+           <option value="0">JNO</option>
+           <option value="1">JYES</option>
+        </param>
 	</params>
 
     <params group="advanced">

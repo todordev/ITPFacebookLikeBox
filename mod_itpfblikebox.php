@@ -15,7 +15,7 @@
 defined( "_JEXEC" ) or die;
 
 if($params->get("fbDynamicLocale", 0)) {
-    $lang = JFactory::getLanguage();
+    $lang   = JFactory::getLanguage();
     $locale = $lang->getTag();
     $locale = str_replace("-","_",$locale);
 } else {
@@ -25,6 +25,21 @@ if($params->get("fbDynamicLocale", 0)) {
 $facebookLikeAppId ="";
 if($params->get("facebookLikeAppId")) {
     $facebookLikeAppId = "&amp;appId=" . $params->get("facebookLikeAppId");
+}
+
+// Make Facebook Like Box responsive
+if($params->get("facebookResponsive", 0) ) { 
+    $css = '
+    #fb-root {
+      display: none;
+    }
+    
+    .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+      width: 100% !important;
+    }';
+
+    $doc = JFactory::getDocument();
+    $doc->addStyleDeclaration($css);
 }
 
 require JModuleHelper::getLayoutPath('mod_itpfblikebox', $params->get('layout', 'default'));
