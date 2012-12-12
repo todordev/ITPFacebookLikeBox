@@ -66,6 +66,7 @@ defined( "_JEXEC" ) or die;?>
 	data-href="<?php echo $params->get("fbPageLink");?>" 
 	data-width="<?php echo $params->get("fbWidth");?>" 
 	data-height="<?php echo $params->get("fbHeight");?>" 
+	data-colorscheme="<?php echo $params->get("fbColour");?>" 
 	data-show-faces="<?php echo $params->get("fbFaces", 1); ?>" 
 	data-border-color="<?php echo $params->get("fbBColour", "");?>" 
 	data-stream="<?php echo $params->get("fbStream", 1); ?>" 
