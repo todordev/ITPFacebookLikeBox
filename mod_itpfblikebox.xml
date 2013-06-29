@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-	<extension type="module" version="2.5" client="site" method="upgrade">
+	<extension type="module" version="3.1" client="site" method="upgrade">
 	<name>MOD_ITPFBLIKEBOX</name>
 	<author>Todor Iliev</author>
-	<creationDate>January, 2010</creationDate>
 	<copyright>Copyright (C) 2010 Todor Iliev ( ITPrism.com )</copyright>
 	<license>http://www.gnu.org/copyleft/gpl.html</license>
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
-	<version>1.7</version>
+	<creationDate>29 June, 2013</creationDate>
+	<version>1.8</version>
 	<description>MOD_ITPFBLIKEBOX_DESC</description>
     
 	<languages folder="language">
         <language tag="en-GB">en-GB/en-GB.mod_itpfblikebox.ini</language>
         <language tag="en-GB">en-GB/en-GB.mod_itpfblikebox.sys.ini</language>
+        <language tag="cs-CZ">cs-CZ/cs-CZ.mod_itpfblikebox.ini</language>
+        <language tag="cs-CZ">cs-CZ/cs-CZ.mod_itpfblikebox.sys.ini</language>
+        <language tag="es-ES">es-ES/es-ES.mod_itpfblikebox.ini</language>
+        <language tag="es-ES">es-ES/es-ES.mod_itpfblikebox.sys.ini</language>
+        <language tag="it-IT">it-IT/it-IT.mod_itpfblikebox.ini</language>
+        <language tag="it-IT">it-IT/it-IT.mod_itpfblikebox.sys.ini</language>
         <language tag="lt-LT">lt-LT/lt-LT.mod_itpfblikebox.ini</language>
         <language tag="lt-LT">lt-LT/lt-LT.mod_itpfblikebox.sys.ini</language>
     </languages>    
@@ -41,19 +47,19 @@
 						<option value="dark">MOD_ITPFBLIKEBOX_DARK</option>
 					</field>
 					<field name="fbBColour" type="text" default="" label="MOD_ITPFBLIKEBOX_BCOLOUR" description="MOD_ITPFBLIKEBOX_BCOLOUR_DESC" />
-					<field name="fbFaces" type="radio" default="1" label="MOD_ITPFBLIKEBOX_FACES" description="MOD_ITPFBLIKEBOX_FACES_DESC">
+					<field name="fbFaces" type="radio" default="1" label="MOD_ITPFBLIKEBOX_FACES" description="MOD_ITPFBLIKEBOX_FACES_DESC" class="btn-group">
 						<option value="0">JHIDE</option>
 						<option value="1">JSHOW</option>
 					</field>
-					<field name="fbStream" type="radio" default="1" label="MOD_ITPFBLIKEBOX_STREAM" description="MOD_ITPFBLIKEBOX_STREAM_DESC">
+					<field name="fbStream" type="radio" default="1" label="MOD_ITPFBLIKEBOX_STREAM" description="MOD_ITPFBLIKEBOX_STREAM_DESC" class="btn-group">
 						<option value="0">JHIDE</option>
 						<option value="1">JSHOW</option>
 					</field>
-					<field name="fbHeader" type="radio" default="1" label="MOD_ITPFBLIKEBOX_HEADER" description="MOD_ITPFBLIKEBOX_HEADER_DESC">
+					<field name="fbHeader" type="radio" default="1" label="MOD_ITPFBLIKEBOX_HEADER" description="MOD_ITPFBLIKEBOX_HEADER_DESC" class="btn-group">
 						<option value="0">JHIDE</option>
 						<option value="1">JSHOW</option>
 					</field>
-					<field name="fbDynamicLocale" type="radio" default="1" label="MOD_ITPFBLIKEBOX_DYN_LOCALE" description="MOD_ITPFBLIKEBOX_DYN_LOCALE_DESC">
+					<field name="fbDynamicLocale" type="radio" default="1" label="MOD_ITPFBLIKEBOX_DYN_LOCALE" description="MOD_ITPFBLIKEBOX_DYN_LOCALE_DESC" class="btn-group">
                         <option value="0">JNO</option>
                         <option value="1">JYES</option>
                     </field>
@@ -170,19 +176,19 @@
 				
 				<fieldset name="facebook_advanced_options" label="MOD_ITPFBLIKEBOX_FACEBOOK_SETTINGS">
 				    <field name="facebookLikeAppId" type="text" default="" label="MOD_ITPFBLIKEBOX_APP_ID" description="MOD_ITPFBLIKEBOX_APP_ID_DESC" />
-                    <field name="fbLoadJsLib" type="radio" default="1" label="MOD_ITPFBLIKEBOX_LOAD_JS_LIB" description="MOD_ITPFBLIKEBOX_LOAD_JS_LIB_DESC">
+                    <field name="fbLoadJsLib" type="radio" default="1" label="MOD_ITPFBLIKEBOX_LOAD_JS_LIB" description="MOD_ITPFBLIKEBOX_LOAD_JS_LIB_DESC" class="btn-group">
                         <option value="0">JNO</option>
                         <option value="1">JYES</option>
                     </field>
-                    <field name="facebookRootDiv" type="radio" default="1" label="MOD_ITPFBLIKEBOX_ROOT" description="MOD_ITPFBLIKEBOX_ROOT_DESC" >
+                    <field name="facebookRootDiv" type="radio" default="1" label="MOD_ITPFBLIKEBOX_ROOT" description="MOD_ITPFBLIKEBOX_ROOT_DESC" class="btn-group">
                         <option value="0">JNO</option>
                         <option value="1">JYES</option>
                      </field>
-                     <field name="facebookForceWall" type="radio" default="0" label="MOD_ITPFBLIKEBOX_FORCE_WALL" description="MOD_ITPFBLIKEBOX_FORCE_WALL_DESC" >
+                     <field name="facebookForceWall" type="radio" default="0" label="MOD_ITPFBLIKEBOX_FORCE_WALL" description="MOD_ITPFBLIKEBOX_FORCE_WALL_DESC" class="btn-group">
                         <option value="0">JNO</option>
                         <option value="1">JYES</option>
                      </field>
-                     <field name="facebookResponsive" type="radio" default="0" label="MOD_ITPFBLIKEBOX_RESPONSIVE" description="MOD_ITPFBLIKEBOX_RESPONSIVE_DESC" >
+                     <field name="facebookResponsive" type="radio" default="0" label="MOD_ITPFBLIKEBOX_RESPONSIVE" description="MOD_ITPFBLIKEBOX_RESPONSIVE_DESC" class="btn-group">
                         <option value="0">JNO</option>
                         <option value="1">JYES</option>
                      </field>
@@ -194,29 +200,29 @@
 						description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
 	
 					<field
-                        name="cache"
-                        type="list"
-                        default="1"
-                        label="COM_MODULES_FIELD_CACHING_LABEL"
-                        description="COM_MODULES_FIELD_CACHING_DESC">
-                        <option
-                            value="1">JGLOBAL_USE_GLOBAL</option>
-                        <option
-                            value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
-                    </field>
-                    <field
-                        name="cache_time"
-                        type="text"
-                        default="900"
-                        label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
-                        description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
-                    <field
-                        name="cachemode"
-                        type="hidden"
-                        default="static">
-                        <option
-                            value="static"></option>
-                    </field>
+	                    name="cache"
+	                    type="list"
+	                    default="1"
+	                    label="COM_MODULES_FIELD_CACHING_LABEL"
+	                    description="COM_MODULES_FIELD_CACHING_DESC">
+	                    <option
+	                        value="1">JGLOBAL_USE_GLOBAL</option>
+	                    <option
+	                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+	                </field>
+	                <field
+	                    name="cache_time"
+	                    type="text"
+	                    default="900"
+	                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+	                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+	                <field
+	                    name="cachemode"
+	                    type="hidden"
+	                    default="static">
+	                    <option
+	                        value="static"></option>
+	                </field>
 					
 				</fieldset>
 	        </fields>

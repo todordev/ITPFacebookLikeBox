@@ -27,19 +27,31 @@ if($params->get("facebookLikeAppId")) {
     $facebookLikeAppId = "&amp;appId=" . $params->get("facebookLikeAppId");
 }
 
+$doc = JFactory::getDocument();
+
 // Make Facebook Like Box responsive
 if($params->get("facebookResponsive", 0) ) { 
     $css = '
     #fb-root {
       display: none;
     }
-    
-    .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+            
+    .fb-like-box, .fb-like-box span, .fb-like-box span iframe[style]  {
+      min-width: '.$params->get("fbWidth").'px;
       width: 100% !important;
-    }';
+    }
+    
+';
 
-    $doc = JFactory::getDocument();
-    $doc->addStyleDeclaration($css);
+} else {
+
+    $css = '
+    #sidebar .widget_facebook-like-box, #sidebar .fb_iframe_widget iframe {
+        width: '.$params->get("fbWidth").'px !important;
+    }';
+    
 }
+
+$doc->addStyleDeclaration($css);
 
 require JModuleHelper::getLayoutPath('mod_itpfblikebox', $params->get('layout', 'default'));
