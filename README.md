@@ -1,12 +1,17 @@
 ITPFacebookLikeBox for Joomla! 
 ==========================
-( Version 1.8 )
+( Version 1.9 )
 - - -
 
 Changelog
 ---------
 
+###v1.9
+
+* Replaced option "Border colour" with "Show border".
+
 ###v1.8
+
 * Fixed the issue with the widget width.
 * [[#8]](https://github.com/ITPrism/ITPFacebookLikeBox/issues/8 "New responsive option not compatible with ITPShare and other third-party facebook plugins") Fixed the issue with the responsive style.
 * Added new languages

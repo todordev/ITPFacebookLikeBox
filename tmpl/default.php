@@ -38,7 +38,7 @@ defined( "_JEXEC" ) or die;?>
     height="<?php echo $params->get("fbHeight");?>"
     colorscheme="<?php echo $params->get("fbColour");?>" 
     show_faces="<?php echo (!$params->get("fbFaces")) ? "false" : "true";?>" 
-    border_color="<?php echo $params->get("fbBColour", "");?>" 
+    show_border="<?php echo (!$params->get("fbBorder")) ? "false": "true";?>" 
     stream="<?php echo (!$params->get("fbStream")) ? "false" : "true";?>" 
     header="<?php echo (!$params->get("fbHeader")) ? "false" : "true";?>"
     force_wall="<?php echo (!$params->get("facebookForceWall")) ? "false" : "true";?>"></fb:like-box>
@@ -68,7 +68,7 @@ defined( "_JEXEC" ) or die;?>
 	data-height="<?php echo $params->get("fbHeight");?>" 
 	data-colorscheme="<?php echo $params->get("fbColour");?>" 
 	data-show-faces="<?php echo $params->get("fbFaces", 1); ?>" 
-	data-border-color="<?php echo $params->get("fbBColour", "");?>" 
+	data-show-border="<?php echo $params->get("fbBorder", 1);?>" 
 	data-stream="<?php echo $params->get("fbStream", 1); ?>" 
 	data-header="<?php echo $params->get("fbHeader", 1); ?>"
 	data-force-wall="<?php echo (!$params->get("facebookForceWall")) ? "false" : "true";?>"></div>
@@ -85,7 +85,7 @@ defined( "_JEXEC" ) or die;?>
  ?>
 
 <iframe 
-src="http://www.facebook.com/plugins/likebox.php?href=<?php echo $params->get("fbPageLink");?>&amp;locale=<?php echo $locale;?>&amp;width=<?php echo $params->get("fbWidth");?>&amp;colorscheme=<?php echo $params->get("fbColour");?>&amp;show_faces=<?php echo $params->get("fbFaces", 1);?>&amp;border_color=<?php echo rawurlencode($params->get("fbBColour", ""));?>&amp;stream=<?php echo $params->get("fbStream", 1);?>&amp;header=<?php echo $params->get("fbHeader", 1);?>&amp;height=<?php echo $params->get("fbHeight");?><?php echo $facebookLikeAppId;?><?php echo $forceWall;?>"
+src="http://www.facebook.com/plugins/likebox.php?href=<?php echo $params->get("fbPageLink");?>&amp;locale=<?php echo $locale;?>&amp;width=<?php echo $params->get("fbWidth");?>&amp;colorscheme=<?php echo $params->get("fbColour");?>&amp;show_faces=<?php echo $params->get("fbFaces", 1);?>&amp;show_border=<?php echo (!$params->get("fbBorder")) ? "false" : "true";?>&amp;stream=<?php echo $params->get("fbStream", 1);?>&amp;header=<?php echo $params->get("fbHeader", 1);?>&amp;height=<?php echo $params->get("fbHeight");?><?php echo $facebookLikeAppId;?><?php echo $forceWall;?>"
 scrolling="no" 
 frameborder="0" 
 style="border:none; overflow:hidden; width:<?php echo $params->get("fbWidth");?>px; height:<?php echo $params->get("fbHeight");?>px;" 
