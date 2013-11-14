@@ -37,7 +37,7 @@ if($params->get("facebookResponsive", 0) ) {
     }
             
     .fb-like-box, .fb-like-box span, .fb-like-box span iframe[style]  {
-      min-width: '.$params->get("fbWidth").'px;
+      max-width: '.$params->get("fbWidth").'px; /*Fixing bug response design*/
       width: 100% !important;
     }
     
