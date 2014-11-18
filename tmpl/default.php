@@ -3,12 +3,8 @@
  * @package      ITPrism Modules
  * @subpackage   ITPFacebookLikeBox
  * @author       Todor Iliev
- * @copyright    Copyright (C) 2010 Todor Iliev <todor@itprism.com>. All rights reserved.
+ * @copyright    Copyright (C) 2014 Todor Iliev <todor@itprism.com>. All rights reserved.
  * @license      http://www.gnu.org/copyleft/gpl.html GNU/GPL
- * ITPFacebookLikeBox is free software. This version may have been modified pursuant
- * to the GNU General Public License, and as distributed it includes or
- * is derivative of works licensed under the GNU General Public License or
- * other free or open source software licenses.
  */
 
 // no direct access
@@ -24,24 +20,24 @@ defined( "_JEXEC" ) or die;?>
 
 <?php if($params->get("fbLoadJsLib", 1)) {?>
 <script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/<?php echo $locale;?>/all.js#xfbml=1<?php echo $facebookLikeAppId;?>";
-  fjs.parentNode.insertBefore(js, fjs);
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/<?php echo $locale;?>/sdk.js#xfbml=1&amp;version=v2.0<?php echo $facebookLikeAppId;?>";
+    fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <?php }?>
     
-    <fb:like-box 
-    href="<?php echo $params->get("fbPageLink");?>" 
-    width="<?php echo $params->get("fbWidth");?>"
-    height="<?php echo $params->get("fbHeight");?>"
-    colorscheme="<?php echo $params->get("fbColour");?>" 
-    show_faces="<?php echo (!$params->get("fbFaces")) ? "false" : "true";?>" 
-    show_border="<?php echo (!$params->get("fbBorder")) ? "false": "true";?>" 
-    stream="<?php echo (!$params->get("fbStream")) ? "false" : "true";?>" 
-    header="<?php echo (!$params->get("fbHeader")) ? "false" : "true";?>"
-    force_wall="<?php echo (!$params->get("facebookForceWall")) ? "false" : "true";?>"></fb:like-box>
+<fb:like-box
+href="<?php echo $params->get("fbPageLink");?>"
+width="<?php echo $params->get("fbWidth");?>"
+height="<?php echo $params->get("fbHeight");?>"
+colorscheme="<?php echo $params->get("fbColour");?>"
+show_faces="<?php echo (!$params->get("fbFaces")) ? "false" : "true";?>"
+show_border="<?php echo (!$params->get("fbBorder")) ? "false": "true";?>"
+stream="<?php echo (!$params->get("fbStream")) ? "false" : "true";?>"
+header="<?php echo (!$params->get("fbHeader")) ? "false" : "true";?>"
+force_wall="<?php echo (!$params->get("facebookForceWall")) ? "false" : "true";?>"></fb:like-box>
 
 <?php break; ?>
 
@@ -54,11 +50,11 @@ defined( "_JEXEC" ) or die;?>
 
 <?php if($params->get("fbLoadJsLib", 1)) {?>
 <script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/<?php echo $locale;?>/all.js#xfbml=1<?php echo $facebookLikeAppId;?>";
-  fjs.parentNode.insertBefore(js, fjs);
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/<?php echo $locale;?>/sdk.js#xfbml=1&amp;version=v2.0<?php echo $facebookLikeAppId;?>";
+    fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <?php }?>
 

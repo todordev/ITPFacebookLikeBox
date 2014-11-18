@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-	<extension type="module" version="3.1" client="site" method="upgrade">
+	<extension type="module" version="3.3" client="site" method="upgrade">
 	<name>MOD_ITPFBLIKEBOX</name>
 	<author>Todor Iliev</author>
-	<copyright>Copyright (C) 2010 Todor Iliev ( ITPrism.com )</copyright>
+	<copyright>Copyright (C) 2014 Todor Iliev ( ITPrism.com )</copyright>
 	<license>http://www.gnu.org/copyleft/gpl.html</license>
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
-	<creationDate>18 July, 2013</creationDate>
-	<version>1.9</version>
+	<creationDate>18 November, 2014</creationDate>
+	<version>1.10</version>
 	<description>MOD_ITPFBLIKEBOX_DESC</description>
-    
-	<languages folder="language">
-        <language tag="en-GB">en-GB/en-GB.mod_itpfblikebox.ini</language>
-        <language tag="en-GB">en-GB/en-GB.mod_itpfblikebox.sys.ini</language>
-        <language tag="cs-CZ">cs-CZ/cs-CZ.mod_itpfblikebox.ini</language>
-        <language tag="cs-CZ">cs-CZ/cs-CZ.mod_itpfblikebox.sys.ini</language>
-        <language tag="es-ES">es-ES/es-ES.mod_itpfblikebox.ini</language>
-        <language tag="es-ES">es-ES/es-ES.mod_itpfblikebox.sys.ini</language>
-        <language tag="it-IT">it-IT/it-IT.mod_itpfblikebox.ini</language>
-        <language tag="it-IT">it-IT/it-IT.mod_itpfblikebox.sys.ini</language>
-        <language tag="lt-LT">lt-LT/lt-LT.mod_itpfblikebox.ini</language>
-        <language tag="lt-LT">lt-LT/lt-LT.mod_itpfblikebox.sys.ini</language>
-    </languages>    
     
     <help url="MOD_ITPFBLIKEBOX_HELP_URL"/>
     
@@ -29,6 +16,8 @@
 		<filename module="mod_itpfblikebox">mod_itpfblikebox.php</filename>
 		<filename>index.html</filename>
 		<filename>README.md</filename>
+
+		<folder>language</folder>
 		<folder>tmpl</folder>
 	</files>
 		<config>
