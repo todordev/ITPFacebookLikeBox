@@ -3,6 +3,16 @@ ITPFacebookLikeBox for Joomla!
 ( Version 1.10 )
 - - -
 
+ITPFacebookLikeBox is a module that displays the social plug-in Facebook Like Box on websites, powered by Joomla! CMS.
+
+##Documentation
+You can find the documentation on the following page.
+
+[Documentation and FAQ] (http://itprism.com/help/34-facebook-likebox-documentation-faq)
+
+##Download
+You can [download ITPFacebookLikeBox package] (http://itprism.com/free-joomla-extensions/social-marketing-seo/facebook-like-box) and from the website of ITPrism.
+
 Changelog
 ---------
 
