@@ -23,7 +23,7 @@ defined( "_JEXEC" ) or die;?>
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/<?php echo $locale;?>/sdk.js#xfbml=1&amp;version=v2.0<?php echo $facebookLikeAppId;?>";
+    js.src = "//connect.facebook.net/<?php echo $locale;?>/sdk.js#xfbml=1&version=v2.0<?php echo $facebookLikeAppId;?>";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <?php }?>
@@ -53,7 +53,7 @@ force_wall="<?php echo (!$params->get("facebookForceWall")) ? "false" : "true";?
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/<?php echo $locale;?>/sdk.js#xfbml=1&amp;version=v2.0<?php echo $facebookLikeAppId;?>";
+    js.src = "//connect.facebook.net/<?php echo $locale;?>/sdk.js#xfbml=1&version=v2.0<?php echo $facebookLikeAppId;?>";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <?php }?>

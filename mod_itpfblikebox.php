@@ -20,7 +20,7 @@ if ($params->get("fbDynamicLocale", 0)) {
 
 $facebookLikeAppId = "";
 if ($params->get("facebookLikeAppId")) {
-    $facebookLikeAppId = "&amp;appId=" . $params->get("facebookLikeAppId");
+    $facebookLikeAppId = "&appId=" . $params->get("facebookLikeAppId");
 }
 
 $doc = JFactory::getDocument();
