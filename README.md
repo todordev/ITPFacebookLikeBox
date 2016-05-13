@@ -1,6 +1,6 @@
-ITPFacebookLikeBox ( Page Promoter ) for Joomla!
+ITPFacebookLikeBox ( Page Plugin ) for Joomla!
 ==========================
-( Version 1.11 )
+( Version 1.12 )
 - - -
 
 ITPFacebookLikeBox is a module that displays Facebook Page plugin on websites, based on Joomla! CMS.
@@ -15,6 +15,10 @@ You can [download ITPFacebookLikeBox package] (http://itprism.com/free-joomla-ex
 
 Changelog
 ---------
+
+###V1.12
+* Replaced option "show posts" with "tabs".
+* Added options Hide call to action (CTA), Adapt to plugin container width, Small Header and Responsive.
 
 ###v1.11
 * Replaced old social plugin with Facebook Page plugin.

@@ -29,23 +29,36 @@
 	            <fieldset name="basic">
 					<field name="page_title" type="text" default="" label="MOD_ITPFBLIKEBOX_PAGE_TITLE" description="MOD_ITPFBLIKEBOX_PAGE_TITLE_DESC" class="input-xxlarge"/>
 					<field name="page_link" type="text" default="" label="MOD_ITPFBLIKEBOX_PAGE_LINK" description="MOD_ITPFBLIKEBOX_PAGE_LINK_DESC" class="input-xxlarge"/>
-					<field name="width" type="text" default="280" label="MOD_ITPFBLIKEBOX_WIDTH" description="MOD_ITPFBLIKEBOX_WIDTH_DESC" />
-					<field name="height" type="text" default="627" label="MOD_ITPFBLIKEBOX_HEIGHT" description="MOD_ITPFBLIKEBOX_HEIGHT_DESC" />
-					<field name="show_facepile" type="radio" default="1" label="MOD_ITPFBLIKEBOX_SHOW_FACES" description="MOD_ITPFBLIKEBOX_SHOW_FACES_DESC" class="btn-group">
-						<option value="0">JNO</option>
-						<option value="1">JYES</option>
-					</field>
-					<field name="show_posts" type="radio" default="1" label="MOD_ITPFBLIKEBOX_SHOW_POSTS" description="MOD_ITPFBLIKEBOX_SHOW_POSTS_DESC" class="btn-group">
-						<option value="0">JNO</option>
-                        <option value="1">JYES</option>
-					</field>
-					<field name="hide_cover" type="radio" default="0" label="MOD_ITPFBLIKEBOX_HIDE_COVER" description="MOD_ITPFBLIKEBOX_HIDE_COVER_DESC" class="btn-group">
-						<option value="0">JNO</option>
-                        <option value="1">JYES</option>
-					</field>
+                    <field name="tabs" type="text" default="timeline" label="MOD_ITPFBLIKEBOX_TABS" description="MOD_ITPFBLIKEBOX_TABS_DESC" hint="MOD_ITPFBLIKEBOX_TABS_HINT" class="input-xxlarge"/>
+                    <field name="width" type="text" default="340" label="MOD_ITPFBLIKEBOX_WIDTH" description="MOD_ITPFBLIKEBOX_WIDTH_DESC" hint="MOD_ITPFBLIKEBOX_WIDTH_HINT" class="input-xxlarge"/>
+                    <field name="height" type="text" default="500" label="MOD_ITPFBLIKEBOX_HEIGHT" description="MOD_ITPFBLIKEBOX_HEIGHT_DESC" hint="MOD_ITPFBLIKEBOX_HEIGHT_HINT" class="input-xxlarge"/>
 				</fieldset>
 				
 				<fieldset name="facebook_advanced_options" label="MOD_ITPFBLIKEBOX_FACEBOOK_SETTINGS">
+                    <field name="show_facepile" type="radio" default="1" label="MOD_ITPFBLIKEBOX_SHOW_FACES" description="MOD_ITPFBLIKEBOX_SHOW_FACES_DESC" class="btn-group">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                    </field>
+                    <field name="hide_cover" type="radio" default="0" label="MOD_ITPFBLIKEBOX_HIDE_COVER" description="MOD_ITPFBLIKEBOX_HIDE_COVER_DESC" class="btn-group">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                    </field>
+                    <field name="hide_cta" type="radio" default="0" label="MOD_ITPFBLIKEBOX_HIDE_CTA" description="MOD_ITPFBLIKEBOX_HIDE_CTA_DESC" class="btn-group">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                    </field>
+                    <field name="small_header" type="radio" default="0" label="MOD_ITPFBLIKEBOX_USE_SMALL_HEADER" description="MOD_ITPFBLIKEBOX_HIDE_COVER_DESC" class="btn-group">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                    </field>
+                    <field name="adapt_container" type="radio" default="1" label="MOD_ITPFBLIKEBOX_ADAPT_CONTAINER_WIDTH" description="MOD_ITPFBLIKEBOX_ADAPT_CONTAINER_WIDTH_DESC" class="btn-group">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                    </field>
+                    <field name="responsive" type="radio" default="0" label="MOD_ITPFBLIKEBOX_RESPONSIVE" description="MOD_ITPFBLIKEBOX_RESPONSIVE_DESC" class="btn-group">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                    </field>
 				    <field name="app_id" type="text" default="" label="MOD_ITPFBLIKEBOX_APP_ID" description="MOD_ITPFBLIKEBOX_APP_ID_DESC" />
                     <field name="load_js" type="radio" default="1" label="MOD_ITPFBLIKEBOX_LOAD_JS_LIB" description="MOD_ITPFBLIKEBOX_LOAD_JS_LIB_DESC" class="btn-group">
                         <option value="0">JNO</option>
@@ -181,10 +194,8 @@
 	                    default="1"
 	                    label="COM_MODULES_FIELD_CACHING_LABEL"
 	                    description="COM_MODULES_FIELD_CACHING_DESC">
-	                    <option
-	                        value="1">JGLOBAL_USE_GLOBAL</option>
-	                    <option
-	                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+	                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+	                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
 	                </field>
 	                <field
 	                    name="cache_time"
@@ -196,8 +207,7 @@
 	                    name="cachemode"
 	                    type="hidden"
 	                    default="static">
-	                    <option
-	                        value="static"></option>
+	                    <option value="static"></option>
 	                </field>
 					
 				</fieldset>
