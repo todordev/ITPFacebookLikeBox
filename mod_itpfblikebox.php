@@ -3,8 +3,8 @@
  * @package      ITPrism Modules
  * @subpackage   ITPFacebookLikeBox
  * @author       Todor Iliev
- * @copyright    Copyright (C) 2014 Todor Iliev <todor@itprism.com>. All rights reserved.
- * @license      http://www.gnu.org/copyleft/gpl.html GNU/GPL
+ * @copyright    Copyright (C) 2016 Todor Iliev <todor@itprism.com>. All rights reserved.
+ * @license      http://www.gnu.org/licenses/gpl-3.0.en.html
  */
 
 // no direct access

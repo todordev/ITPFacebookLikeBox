@@ -13,6 +13,9 @@ You can find the documentation on the following page.
 ##Download
 You can [download ITPFacebookLikeBox package] (http://itprism.com/free-joomla-extensions/social-marketing-seo/facebook-like-box) and from the website of ITPrism.
 
+##License
+ITPFacebookLikeBox is under [GPLv3 license] (http://www.gnu.org/licenses/gpl-3.0.en.html).
+
 Changelog
 ---------
 
